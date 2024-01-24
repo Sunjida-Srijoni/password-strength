@@ -42,7 +42,7 @@
                     msg.style.color = "yellow";
 
                 }
-                else if(pass.value.length >= 8)
+                else if(pass.value.length >= 8 && (pass.value.includes('$')) || (pass.value.includes('&')) || (pass.value.includes('*')) || (pass.value.includes('%')))
                 {
                     str.innerHTML = "strong";
                     console.log("strong");
